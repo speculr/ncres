@@ -42,11 +42,22 @@ $link-hover-color:      darken($link-color, 15%) !default;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
+@font-face {
+    font-family: 'amarillousafregular';
+    src: url('../fonts/amarurgt-webfont.eot');
+    src: url('../fonts/amarurgt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/amarurgt-webfont.woff') format('woff'),
+         url('../fonts/amarurgt-webfont.ttf') format('truetype'),
+         url('../fonts/amarurgt-webfont.svg#amarillousafregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 $font-family-sans-serif:  "Coda","Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-monospace:   "amarillousafregular", Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;

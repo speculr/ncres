@@ -6,7 +6,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 html,body {
   height:100%;
-  background:url("../images/use_your_illusion.png") repeat
+  /* background:url("../images/use_your_illusion.png") repeat */
+  background: #001923; /* Old browsers */
+background: -moz-linear-gradient(top,  #001923 0%, #07455c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#001923), color-stop(100%,#07455c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #001923 0%,#07455c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #001923 0%,#07455c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #001923 0%,#07455c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #001923 0%,#07455c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001923', endColorstr='#07455c',GradientType=0 ); /* IE6-9 */
+
 
 
 }
@@ -14,10 +23,14 @@ h1 {
   padding-top:1em;
   font-size:40px;
   color:#eee;
+  font-family:$font-family-monospace;
+  letter-spacing: .375em;
 }
 
 .lead {
-	color:#ccc;
+	color:rgb(22, 120, 125);
+  letter-spacing: .25em;
+  padding-top:1em;
 }
 
 
@@ -41,6 +54,10 @@ h1 {
 .v-center {
   margin-top:7%;
 }
+.smallhero{
+  padding-top:15em;
+  color:rgb(22, 120, 125);
+}
 
 .panel-default {
   background-color: rgba(0,0,0, .3);
@@ -52,4 +69,8 @@ h1 {
   border-bottom: 1px solid #222;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+}
+footer{
+  background-color: rgba(0, 25, 35,1);
+  padding-top:3em;
 }
